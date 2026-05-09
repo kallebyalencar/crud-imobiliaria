@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "title": "Casa no Bosque",
+        "description": "Linda casa com 3 quartos, piscina e churrasqueira.",
+        "price": 500,
+        "image": "assets/img/casa-no-bosque.jpg",
+        "location": "Bosque das Chaves"
+    },
+    {
+        "id": 2,
+        "title": "Apartamento Central",
+        "description": "Apartamento moderno com 2 quartos e vista para a cidade.",
+        "price": 950,
+        "image": "assets/img/apartment1.jpg",
+        "location": "Centro"
+    },
+    {
+        "id": 3,
+        "title": "Casa Aconchegante",
+        "description": "Casa com portas redondas, telhado verde e um jardim muito aconchegante.",
+        "price": 1500,
+        "image": "assets/img/conor-grid.jpg",
+        "location": "Zona Rural"
+    },
+    {
+        "id": 4,
+        "title": "Ponto comercial",
+        "description": "Ponto comercial histórico com ambiente rústico e autêntico.",
+        "price": 2500,
+        "image": "assets/img/hogs-head.jpg",
+        "location": "Vilarejo"
+    }
+
+]
