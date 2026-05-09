@@ -24,6 +24,7 @@ Sistema de imobiliária desenvolvido com PHP puro, seguindo o padrão arquitetur
 
 ## 📁 Estrutura do Projeto
 
+```
 crud-imobiliaria/
 ├── app/
 │   ├── Controllers/
@@ -34,6 +35,7 @@ crud-imobiliaria/
 ├── public/
 ├── routes/
 └── README.md
+```
 
 ## ⚙️ Como rodar localmente
 
