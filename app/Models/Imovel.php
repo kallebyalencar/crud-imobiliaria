@@ -12,13 +12,13 @@ class Imovel {
     public int $banheiros;
     public int $vagas;
     public float $area;
-    public string $bairro;
-    public string $cidade;
-    public string $estado;
-    public string $descricao;
-    public string $codigo;
-    public string $contato;
-    public string $imagem;
+    public ?string $bairro;
+    public ?string $cidade;
+    public ?string $estado;
+    public ?string $descricao;
+    public ?string $codigo;
+    public ?string $contato;
+    public ?string $imagem;
     public string $created_at;
 }
 
