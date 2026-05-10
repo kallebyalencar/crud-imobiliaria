@@ -1,7 +1,7 @@
 <?php 
 session_start(); 
 
-require_once '../config.php/database.php';
+require_once '../config/database.php';
 
 $request = $_SERVER['REQUEST_URI']; // Captura a URL solicitada
 $basePath = '/tde-backend/crud-imobiliaria/public'; // É o caminho base do projeto
