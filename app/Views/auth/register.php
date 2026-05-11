@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Crie sua conta no Bosque das Chaves e encontre o imóvel dos seus sonhos.">
   <title>Cadastro de Usuário - Bosque das Chaves</title>
-  <link rel="stylesheet" href="public/assets/css/reset.css">
-  <link rel="stylesheet" href="public/assets/css/style.css">
-  <link rel="stylesheet" href="public/assets/css/register.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/register.css">
 </head>
 <body>
 
@@ -15,8 +15,8 @@
   <header class="navbar" role="banner">
     <div class="container">
       <div class="logo">
-        <a href="home-page.php" aria-label="Bosque das Chaves - Início">
-          <img src="public/assets/img/logo.jpeg" alt="Logo Bosque das Chaves">
+        <a href="/" aria-label="Bosque das Chaves - Início">
+          <img src="assets/img/logo.jpeg" alt="Logo Bosque das Chaves">
           <h1>Bosque das Chaves</h1>
         </a>
       </div>
@@ -25,7 +25,7 @@
         <button type="button">Buscar</button>
       </div>
       <div class="perfil">
-        <a href="login.php" class="account-link" aria-label="Meu perfil">
+        <a href="login" class="account-link" aria-label="Meu perfil">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
           </svg>
@@ -37,14 +37,14 @@
     <nav class="main-menu" aria-label="Menu principal">
       <div class="container">
         <ul class="menu-list" role="list">
-          <li><a href="home-page.php">Início</a></li>
-          <li><a href="about.php">Sobre nós</a></li>
-          <li><a href="properties.php">Todos os Imóveis</a></li>
+          <li><a href="/">Início</a></li>
+          <li><a href="sobre">Sobre nós</a></li>
+          <li><a href="imoveis">Todos os Imóveis</a></li>
         </ul>
       </div>
       <div class="auth-buttons">
-        <button class="cadastro" type="button" onclick="window.location.href='register.php'" aria-current="page">Cadastre-se</button>
-        <button class="login" type="button" onclick="window.location.href='login.php'">Login</button>
+        <button class="cadastro" type="button" onclick="window.location.href='cadastro'" aria-current="page">Cadastre-se</button>
+        <button class="login" type="button" onclick="window.location.href='login'">Login</button>
       </div>
     </nav>
   </header>
@@ -263,7 +263,7 @@
           </form>
 
           <p class="login-redirect">
-            Já tem uma conta? <a href="login.php">Faça login</a>
+            Já tem uma conta? <a href="login">Faça login</a>
           </p>
         </div><!-- /.register-card -->
 
@@ -279,14 +279,14 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-column footer-logo">
-          <img src="public/assets/img/logo.jpeg" alt="Logo Bosque das Chaves">
+          <img src="assets/img/logo.jpeg" alt="Logo Bosque das Chaves">
           <p>Encontre a entrada para seu lar mágico.</p>
         </div>
         <div class="footer-column">
           <h4>Links Rápidos</h4>
-          <a href="home-page.php">Início</a>
-          <a href="about.php">Sobre nós</a>
-          <a href="properties.php">Todos os Imóveis</a>
+          <a href="/">Início</a>
+          <a href="sobre">Sobre nós</a>
+          <a href="imoveis">Todos os Imóveis</a>
         </div>
         <div class="footer-column">
           <h4>Contato</h4>
@@ -301,6 +301,6 @@
     </div>
   </footer>
 
-  <script src="public/assets/js/register.js"></script>
+  <script src="assets/js/register.js"></script>
 </body>
 </html>
