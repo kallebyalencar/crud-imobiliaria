@@ -44,6 +44,12 @@ switch ($route) {
         $controller->logout();
         break;
 
+    case '/sobre':
+        require_once '../app/Controllers/HomeController.php';
+        $controller = new HomeController();
+        $controller->sobre();
+        break;
+
     default:
         http_response_code(404);
         echo '404 - Página não encontrada';

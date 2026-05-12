@@ -5,6 +5,10 @@ class HomeController {
         require_once '../app/Views/home/home-page.php';
     }
 
+    public function sobre() {
+        require_once '../app/Views/home/about.php';
+    }
+
 }
 
 ?>
