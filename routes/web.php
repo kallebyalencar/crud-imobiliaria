@@ -32,6 +32,12 @@ switch ($route) {
         $controller->cadastrar();
         break;
 
+    case '/cadastro':
+        require_once '../app/Controllers/AuthController.php';
+        $controller = new AuthController();
+        $controller->cadastrar();
+        break;
+
     case '/logout':
         require_once '../app/Controllers/AuthController.php';
         $controller = new AuthController();
