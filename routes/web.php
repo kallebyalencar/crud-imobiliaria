@@ -38,6 +38,18 @@ switch ($route) {
         $controller->cadastrar();
         break;
 
+    case '/perfil':
+        require_once '../app/Controllers/HomeController.php';
+        $controller = new HomeController();
+        $controller->perfil();
+        break;
+
+    case '/editar-perfil':
+        require_once '../app/Controllers/HomeController.php';
+        $controller = new HomeController();
+        $controller->editarPerfil();
+        break;        
+
     case '/logout':
         require_once '../app/Controllers/AuthController.php';
         $controller = new AuthController();
