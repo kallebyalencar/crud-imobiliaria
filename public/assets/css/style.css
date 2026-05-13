@@ -149,8 +149,9 @@
 .hero-banner {
     position: relative;
     width: 100%;
-    height: 490px;
+    height: 620px;
     overflow: hidden;
+    min-height: 620px;
 }
 
 .hero-banner img{
@@ -168,7 +169,7 @@
     position: absolute;
     top: 40%;
     right:10%;
-    color: #cab99d;
+    color: #fff;
     font-family: 'Fivo Sans', sans-serif;
     z-index: 2;
 }   

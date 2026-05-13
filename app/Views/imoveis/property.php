@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Bosque das Chaves</title>
+    <title>Home - Verde Imobiliária</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/property.css">
@@ -16,7 +16,7 @@
             <div class="logo">
                 <a href="home-page.html">
                     <img src="assets/img/logo.jpeg" alt="logo">
-                    <h1>Bosque das Chaves</h1>
+                    <h1>Verde Imobiliária</h1>
                 </a>
             </div>
             <div class="search-bar">

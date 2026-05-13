@@ -1,5 +1,5 @@
 /**
- * register.js — Bosque das Chaves
+ * register.js — Verde Imobiliaria
  * Lógica da tela de cadastro de usuário:
  *  - Máscara de CPF e Telefone
  *  - Indicador de força da senha
@@ -413,3 +413,4 @@ form.addEventListener('submit', async (e) => {
     btnSpinner.hidden = true;
   }
 });
+

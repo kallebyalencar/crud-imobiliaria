@@ -1,4 +1,4 @@
-/* ===== CRUD.CSS — Bosque das Chaves ===== */
+/* ===== CRUD.CSS — Verde Imobiliaria ===== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
@@ -735,3 +735,4 @@ body {
   .list-view .card-img-wrap { width: 100%; }
   .list-view .card-img { height: 180px; }
 }
+

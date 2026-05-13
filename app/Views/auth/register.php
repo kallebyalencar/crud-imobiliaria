@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Crie sua conta no Bosque das Chaves e encontre o imóvel dos seus sonhos.">
-  <title>Cadastro de Usuário - Bosque das Chaves</title>
+  <meta name="description" content="Crie sua conta no Verde Imobiliaria e encontre o imóvel dos seus sonhos.">
+  <title>Cadastro de Usuário - Verde Imobiliaria</title>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/register.css">
@@ -15,9 +15,9 @@
   <header class="navbar" role="banner">
     <div class="container">
       <div class="logo">
-        <a href="/" aria-label="Bosque das Chaves - Início">
-          <img src="assets/img/logo.jpeg" alt="Logo Bosque das Chaves">
-          <h1>Bosque das Chaves</h1>
+        <a href="/" aria-label="Verde Imobiliaria - Início">
+          <img src="assets/img/logo.jpeg" alt="Logo Verde Imobiliaria">
+          <h1>Verde Imobiliaria</h1>
         </a>
       </div>
       <div class="search-bar" role="search">
@@ -57,7 +57,7 @@
         <!-- Painel lateral decorativo -->
         <aside class="register-aside" aria-hidden="true">
           <div class="aside-content">
-            <h2>Bem-vindo ao<br>Bosque das Chaves</h2>
+            <h2>Bem-vindo ao<br>Verde Imobiliaria</h2>
             <p>Crie sua conta e tenha acesso a centenas de imóveis exclusivos no melhor condomínio da região.</p>
             <ul class="aside-benefits">
               <li>🏡 Acesso a imóveis exclusivos</li>
@@ -279,7 +279,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-column footer-logo">
-          <img src="assets/img/logo.jpeg" alt="Logo Bosque das Chaves">
+          <img src="assets/img/logo.jpeg" alt="Logo Verde Imobiliaria">
           <p>Encontre a entrada para seu lar mágico.</p>
         </div>
         <div class="footer-column">
@@ -296,7 +296,7 @@
       </div>
       <div class="footer-bottom">
         <hr>
-        <p>© 2025 Bosque das Chaves. Todos os direitos reservados.</p>
+        <p>© 2025 Verde Imobiliaria. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
@@ -304,3 +304,4 @@
   <script src="assets/js/register.js"></script>
 </body>
 </html>
+

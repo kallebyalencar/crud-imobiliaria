@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Bosque das Chaves</title>
+    <title>Home - Verde Imobiliaria</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -15,7 +15,7 @@
             <div class="logo">
                 <a href="home-page.html">
                     <img src="assets/img/logo.jpeg" alt="logo">
-                    <h1>Bosque das Chaves</h1>
+                    <h1>Verde Imobiliaria</h1>
                 </a>
             </div>
             <div class="search-bar">
@@ -50,11 +50,11 @@
         <section class="hero-banner">
             <div class="hero-slider">
                 <div class="slide">
-                    <img src="assets/img/hero-banner-maior.png" alt="hero-banner">
+                    <img src="assets/img/hero-banner-maior.jpeg" alt="hero-banner">
                 </div>
                 
                 <div class="hero-content">
-                    <h2>Alugue seu imóvel dos sonhos <br> com a Bosque das Chaves</h2>
+                    <h2>Alugue seu imóvel dos sonhos <br> com a Verde Imobiliaria</h2>
                     <a href="about.html"><button class="more-info" type="button">Saiba Mais</button></a>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="benefit-item">
                     <h3>Ambiente Personalizado</h3>
-                    <p>O espaço já vem decorado de acordo com o tema escolhido, garantindo uma imersão completa e sem a necessidade de grandes preparativos.</p>
+                    <p>O espaço já vem com gostinho de Lar, pronto para abrigar os sonhos de toda a Familia</p>
                 </div>
         </section>
     </main>
@@ -138,7 +138,7 @@
         <div class="container-bottom">
             <div class="footer-bottom">
              <hr>
-             <p>&copy; 2024 Bosque das Chaves. Todos os direitos reservados.</p>
+             <p>&copy; 2024 Verde Imobiliaria. Todos os direitos reservados.</p>
              <p>Os produtos anunciados nesse site são fictícios e fazem parte de um projeto para estudos</p>
             </div>
         </div>

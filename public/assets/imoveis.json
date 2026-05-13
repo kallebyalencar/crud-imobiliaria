@@ -5,7 +5,7 @@
         "description": "Linda casa com 3 quartos, piscina e churrasqueira.",
         "price": 500,
         "image": "assets/img/casa-no-bosque.jpg",
-        "location": "Bosque das Chaves"
+        "location": "Verde Imobiliaria"
     },
     {
         "id": 2,
@@ -33,3 +33,4 @@
     }
 
 ]
+

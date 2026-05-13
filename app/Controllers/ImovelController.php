@@ -21,7 +21,7 @@ class ImovelController {
         $id = $_GET['id'] ?? null;
 
         if(!$id) {
-            header('Location: /tde-backend/crud-imobiliaria/public/imoveis');
+            header('Location: ' . (defined('BASE_URL') ? BASE_URL : '') . '/imoveis');
             exit;
         }
 

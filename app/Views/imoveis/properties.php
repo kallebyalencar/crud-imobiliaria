@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Bosque das Chaves</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/properties.css">
+    <title>Home - Verde Imobiliária</title>
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/reset.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/properties.css">
 
 
 </head>
@@ -18,7 +18,7 @@
             <div class="logo">
                 <a href="home-page.html">
                     <img src="assets/img/logo.jpeg" alt="logo">
-                    <h1>Bosque das Chaves</h1>
+                    <h1>Verde Imobiliária</h1>
                 </a>
             </div>
             <div class="search-bar">
@@ -57,8 +57,8 @@
                     <p>Nenhum imóvel cadastrado ainda.</p>
                 <?php else: ?>
                     <?php foreach ($imoveis as $imovel): ?>
-                        <div class="property-card" onclick="window.location.href='/tde-backend/crud-imobiliaria/public/imovel?id=<?= $imovel->id ?>'">
-                            <img src="/tde-backend/crud-imobiliaria/public/assets/img/<?= htmlspecialchars($imovel->imagem) ?>" alt="<?= htmlspecialchars($imovel->titulo) ?>">
+                        <div class="property-card" onclick="window.location.href='<?= BASE_URL ?>/imovel?id=<?= $imovel->id ?>'">
+                            <img src="<?= BASE_URL ?>/assets/img/<?= htmlspecialchars($imovel->imagem) ?>" alt="<?= htmlspecialchars($imovel->titulo) ?>">
                             <div class="property-info">
                                 <h3><?= htmlspecialchars($imovel->titulo) ?></h3>
                                 <p><?= htmlspecialchars($imovel->descricao) ?></p>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Bosque das Chaves</title>
+    <title>Home - Verde Imobiliaria</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/about.css">
@@ -16,7 +16,7 @@
             <div class="logo">
                 <a href="home-page.html">
                     <img src="assets/img/logo.jpeg" alt="logo">
-                    <h1>Bosque das Chaves</h1>
+                    <h1>Verde Imobiliaria</h1>
                 </a>
             </div>
             <div class="search-bar">
@@ -50,7 +50,8 @@
     <section class="about">
     <div class="background">
             <h2>Sobre Nós</h2>
-    <p>Na Bosque das Chaves, trabalhamos para transformar sonhos em realidade, oferecendo soluções completas em compra, venda e aluguel de imóveis. Nossa missão é proporcionar segurança, transparência e confiança em cada negociação, valorizando o patrimônio de nossos clientes e construindo relacionamentos duradouros.</p>
+    <p>Na Verde Imobiliaria, trabalhamos para transformar sonhos em realidade, oferecendo soluções completas em compra, venda e aluguel de imóveis. Nossa missão é proporcionar segurança, transparência e confiança em cada negociação, valorizando o patrimônio de nossos clientes e construindo relacionamentos duradouros.</p>
     <p>Com uma equipe experiente e comprometida, buscamos sempre unir pessoas aos lares e investimentos ideais, prezando pela qualidade no atendimento e pela excelência em cada detalhe.</p>
     </div>
 </body>
+

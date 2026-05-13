@@ -14,7 +14,7 @@
             <div class="logo">
                 <a href="home-page.html">
                     <img src="assets/img/logo.jpeg" alt="logo">
-                    <h1>Bosque das Chaves</h1>
+                    <h1>Verde Imobiliaria</h1>
                 </a>
             </div>
             <div class="search-bar">

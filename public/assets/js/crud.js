@@ -1,5 +1,5 @@
 /**
- * crud.js — Bosque das Chaves CRUD
+ * crud.js — Verde Imobiliaria CRUD
  * Gerenciamento completo de imóveis com localStorage
  */
 
@@ -20,7 +20,7 @@ const IMOVEIS_INICIAIS = [
     banheiros: 2,
     vagas: 2,
     area: 180,
-    bairro: 'Bosque das Chaves',
+    bairro: 'Verde Imobiliaria',
     cidade: 'Curitiba',
     estado: 'PR',
     descricao: 'Linda casa com 3 quartos, piscina e churrasqueira em ambiente arborizado.',
@@ -659,3 +659,4 @@ document.addEventListener('DOMContentLoaded', () => {
   render();
   updateStats();
 });
+
