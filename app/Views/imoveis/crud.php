@@ -99,6 +99,7 @@ $base = '/tde-backend/crud-imobiliaria/public';
                 </div>
                 <div class="card-footer">
                   <a href="<?= $base ?>/imovel?id=<?= $imovel->id ?>" class="card-btn card-btn-view">👁 Ver</a>
+                  <button class="card-btn card-btn-edit" onclick="editarImovel(<?= $imovel->id ?>)">✏️</button>
                   <button class="card-btn card-btn-del" onclick="deletarImovel(<?= $imovel->id ?>)">🗑️</button>
                 </div>
               </article>
@@ -168,6 +169,51 @@ $base = '/tde-backend/crud-imobiliaria/public';
     </div>
   </div>
 
+  <!-- MODAL EDITAR -->
+  <div class="modal-overlay" id="modal-editar" hidden>
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2>Editar Imóvel</h2>
+        <button class="modal-close" id="modal-editar-close">&times;</button>
+      </div>
+      <form method="POST" action="<?= $base ?>/imovel/editar" enctype="multipart/form-data">
+        <input type="hidden" name="id" id="edit-id">
+        <div class="form-grid">
+          <div class="form-group full-width"><label>Título *</label><input type="text" name="titulo" id="edit-titulo" required></div>
+          <div class="form-group"><label>Tipo *</label><select name="tipo" id="edit-tipo">
+              <option>Casa</option>
+              <option>Apartamento</option>
+              <option>Comercial</option>
+              <option>Terreno</option>
+            </select></div>
+          <div class="form-group"><label>Finalidade *</label><select name="finalidade" id="edit-finalidade">
+              <option>Venda</option>
+              <option>Aluguel</option>
+            </select></div>
+          <div class="form-group"><label>Preço (R$) *</label><input type="number" name="preco" id="edit-preco" min="0" required></div>
+          <div class="form-group"><label>Status</label><select name="status" id="edit-status">
+              <option>Disponível</option>
+              <option>Reservado</option>
+              <option>Vendido</option>
+            </select></div>
+          <div class="form-group"><label>Cidade</label><input type="text" name="cidade" id="edit-cidade"></div>
+          <div class="form-group"><label>Estado</label><select name="estado" id="edit-estado">
+              <option>CE</option>
+              <option>SP</option>
+              <option>RJ</option>
+              <option>MG</option>
+            </select></div>
+          <div class="form-group full-width"><label>Descrição</label><textarea name="descricao" id="edit-descricao" rows="3"></textarea></div>
+          <div class="form-group full-width"><label>Nova Imagem</label><input type="file" name="imagem" accept="image/*"></div>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn-cancel" id="btn-cancel-editar">Cancelar</button>
+          <button type="submit" class="btn-save">Salvar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <div class="toast-container" id="toast-container"></div>
   <script>
     const base = '<?= $base ?>';
@@ -191,6 +237,28 @@ $base = '/tde-backend/crud-imobiliaria/public';
         body: 'id=' + id
       }).then(() => window.location.reload());
     }
+
+    const imoveisData = <?= json_encode($imoveis) ?>;
+
+    function editarImovel(id) {
+      const imovel = imoveisData.find(i => i.id == id);
+      if (!imovel) return;
+      document.getElementById('edit-id').value = imovel.id;
+      document.getElementById('edit-titulo').value = imovel.titulo;
+      document.getElementById('edit-tipo').value = imovel.tipo;
+      document.getElementById('edit-finalidade').value = imovel.finalidade;
+      document.getElementById('edit-preco').value = imovel.preco;
+      document.getElementById('edit-status').value = imovel.status;
+      document.getElementById('edit-cidade').value = imovel.cidade ?? '';
+      document.getElementById('edit-descricao').value = imovel.descricao ?? '';
+      document.getElementById('modal-editar').hidden = false;
+    }
+    document.getElementById('modal-editar-close').addEventListener('click', () => {
+      document.getElementById('modal-editar').hidden = true;
+    });
+    document.getElementById('btn-cancel-editar').addEventListener('click', () => {
+      document.getElementById('modal-editar').hidden = true;
+    });
   </script>
 </body>
 
