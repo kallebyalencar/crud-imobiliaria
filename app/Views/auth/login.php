@@ -3,6 +3,7 @@ $base = '/tde-backend/crud-imobiliaria/public';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,18 @@ $base = '/tde-backend/crud-imobiliaria/public';
     <link rel="stylesheet" href="<?= $base ?>/assets/css/style.css">
     <link rel="stylesheet" href="<?= $base ?>/assets/css/login.css">
 </head>
+
 <body>
     <?php require_once '../app/Views/partials/header.php'; ?>
     <section class="login">
         <div class="login-container">
             <h2>Login</h2>
+            <?php if (isset($_SESSION['sucesso_cadastro'])): ?>
+                <p style="color:green; text-align:center; margin-bottom:10px;">
+                    <?= $_SESSION['sucesso_cadastro'] ?>
+                </p>
+                <?php unset($_SESSION['sucesso_cadastro']); ?>
+            <?php endif; ?>
             <?php if (isset($_SESSION['erro_login'])): ?>
                 <p class="erro"><?= $_SESSION['erro_login'] ?></p>
                 <?php unset($_SESSION['erro_login']); ?>
@@ -31,4 +39,5 @@ $base = '/tde-backend/crud-imobiliaria/public';
         </div>
     </section>
 </body>
+
 </html>

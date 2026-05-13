@@ -98,26 +98,6 @@
                 <span class="field-error" id="reg-confirmar-senha-error"></span>
               </div>
             </div>
-            <fieldset class="form-group full-width">
-              <legend>Tipo de Perfil <span class="required">*</span></legend>
-              <div class="radio-group">
-                <label class="radio-card">
-                  <input type="radio" name="perfil" value="comprador" checked>
-                  <span class="radio-card-icon">🏠</span>
-                  <span class="radio-card-label">Comprador / Locatário</span>
-                </label>
-                <label class="radio-card">
-                  <input type="radio" name="perfil" value="proprietario">
-                  <span class="radio-card-icon">🔑</span>
-                  <span class="radio-card-label">Proprietário</span>
-                </label>
-                <label class="radio-card">
-                  <input type="radio" name="perfil" value="corretor">
-                  <span class="radio-card-icon">👔</span>
-                  <span class="radio-card-label">Corretor</span>
-                </label>
-              </div>
-            </fieldset>
             <div class="form-group full-width">
               <label class="checkbox-label" for="reg-termos">
                 <input type="checkbox" id="reg-termos" name="termos" required>
