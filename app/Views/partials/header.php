@@ -29,8 +29,13 @@
             </ul>
         </div>
         <div class="auth-buttons">
-            <button class="cadastro" type="button" onclick="window.location.href='<?= $base ?>/cadastro'">Cadastre-se</button>
-            <button class="login" type="button" onclick="window.location.href='<?= $base ?>/login'">Login</button>
+            <?php if (isset($_SESSION['usuario_id'])): ?>
+                <span style="color:#fff; font-weight:bold;">Olá, <?= htmlspecialchars($_SESSION['usuario_nome']) ?>!</span>
+                <button class="login" type="button" onclick="window.location.href='<?= $base ?>/logout'">Sair</button>
+            <?php else: ?>
+                <button class="cadastro" type="button" onclick="window.location.href='<?= $base ?>/cadastro'">Cadastre-se</button>
+                <button class="login" type="button" onclick="window.location.href='<?= $base ?>/login'">Login</button>
+            <?php endif; ?>
         </div>
     </nav>
 </header>
