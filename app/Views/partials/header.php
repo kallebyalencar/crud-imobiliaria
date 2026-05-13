@@ -31,6 +31,7 @@
         <div class="auth-buttons">
             <?php if (isset($_SESSION['usuario_id'])): ?>
                 <span style="color:#fff; font-weight:bold;">Olá, <?= htmlspecialchars($_SESSION['usuario_nome']) ?>!</span>
+                <button class="cadastro" type="button" onclick="window.location.href='<?= $base ?>/meus-imoveis'">Meus Imóveis</button>
                 <button class="login" type="button" onclick="window.location.href='<?= $base ?>/logout'">Sair</button>
             <?php else: ?>
                 <button class="cadastro" type="button" onclick="window.location.href='<?= $base ?>/cadastro'">Cadastre-se</button>

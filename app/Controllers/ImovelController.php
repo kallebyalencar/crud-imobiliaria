@@ -28,6 +28,12 @@ class ImovelController {
         $imovel = $this->dao->buscarPorId($id);
         require_once '../app/Views/imoveis/property.php';
     }
+
+    public function gerenciar() {
+        $usuario_id = $_SESSION['usuario_id'];
+        $imoveis = $this->dao->listarPorUsuario($usuario_id);
+        require_once '../app/Views/imoveis/crud.php';
+    }
 }
 
 ?>

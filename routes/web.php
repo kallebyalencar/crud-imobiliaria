@@ -20,6 +20,16 @@ switch ($route) {
         $controller->show();
         break;
 
+    case '/meus-imoveis':
+        if (!isset($_SESSION['usuario_id'])) {
+            header('Location: /tde-backend/crud-imobiliaria/public/login');
+            exit;
+        }
+        require_once '../app/Controllers/ImovelController.php';
+        $controller = new ImovelController();
+        $controller->gerenciar();
+        break;
+
     case '/login':
         require_once '../app/Controllers/AuthController.php';
         $controller = new AuthController();
