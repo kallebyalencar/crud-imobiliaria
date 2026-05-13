@@ -4,15 +4,15 @@ Sistema de imobiliária desenvolvido com PHP puro, seguindo o padrão arquitetur
 
 ## 👥 Time
 
-| Nome |
-|------|
-| Kalleby |
-| Clara |
-| Lia |
-| Cassio |
-| Giselle |
-| Ingrid |
-| João |
+| Nome | Área |
+|------|------|
+| Kalleby | Backend |
+| Clara | Backend |
+| Lia | Backend |
+| Cassio | Backend |
+| Giselle | Frontend |
+| Ingrid | Frontend |
+| João | Frontend |
 
 ## 🛠️ Tecnologias
 

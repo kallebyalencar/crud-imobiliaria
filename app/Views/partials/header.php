@@ -26,6 +26,10 @@
                 <li><a href="<?= $base ?>/">Início</a></li>
                 <li><a href="<?= $base ?>/sobre">Sobre nós</a></li>
                 <li><a href="<?= $base ?>/imoveis">Todos os Imóveis</a></li>
+                
+                <?php if (isset($_SESSION['usuario_id'])): ?>
+                <li><a href="<?= $base ?>/meus-imoveis">Meus Imóveis</a></li>
+                <?php endif; ?>
             </ul>
         </div>
         <div class="auth-buttons">
