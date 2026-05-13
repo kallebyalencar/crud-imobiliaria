@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 12/05/2026 às 20:44
+-- Tempo de geração: 13/05/2026 às 06:33
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -67,7 +67,11 @@ CREATE TABLE `imoveis` (
 --
 
 INSERT INTO `imoveis` (`id`, `usuario_id`, `titulo`, `tipo`, `finalidade`, `preco`, `status`, `quartos`, `banheiros`, `vagas`, `area`, `bairro`, `cidade`, `estado`, `descricao`, `codigo`, `contato`, `imagem`, `created_at`) VALUES
-(2, 1, 'Casa no Bosque', 'Casa', 'Aluguel', 1500.00, 'Disponível', 0, 0, 0, 0.00, NULL, 'Juazeiro do Norte', 'CE', NULL, NULL, NULL, NULL, '2026-05-10 22:39:56');
+(2, 1, 'Casa no Bosque', 'Casa', 'Aluguel', 1500.00, 'Disponível', 0, 0, 0, 0.00, NULL, 'Juazeiro do Norte', 'CE', NULL, NULL, NULL, NULL, '2026-05-10 22:39:56'),
+(4, 1, 'Apartamento perto do Cariri Garden', 'Apartamento', 'Venda', 350000.00, 'Disponível', 2, 0, 0, 0.00, NULL, 'Juazeiro do Norte', 'CE', 'Ótimo apartamento bem localizado, próximo a shoppings e faculdades.', NULL, NULL, NULL, '2026-05-13 04:29:43'),
+(5, 1, 'Ponto Comercial no Centro', 'Comercial', 'Aluguel', 2500.00, 'Disponível', 0, 0, 0, 0.00, NULL, 'Juazeiro do Norte', 'CE', 'Amplo espaço para o seu negócio na principal avenida da cidade.', NULL, NULL, NULL, '2026-05-13 04:29:43'),
+(6, 1, 'Casa com design industrial e rústico', 'Casa', 'Aluguel', 2800.00, 'Disponível', 3, 2, 2, 145.50, 'Lagoa Seca', 'Juazeiro do Norte', 'CE', 'Excelente casa de conceito aberto. Conta com acabamentos em cimento queimado, detalhes em madeira e ferro, além de uma ótima iluminação natural e espaço para closet.', NULL, NULL, NULL, '2026-05-13 04:31:36'),
+(7, 1, 'Lote plano pronto para construir', 'Terreno', 'Venda', 115000.00, 'Disponível', 0, 0, 0, 300.00, 'Aeroporto', 'Juazeiro do Norte', 'CE', 'Terreno amplo e murado em área de grande expansão. Oportunidade perfeita para investimento ou construção do seu projeto dos sonhos.', NULL, NULL, NULL, '2026-05-13 04:31:36');
 
 -- --------------------------------------------------------
 
@@ -89,7 +93,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `telefone`, `created_at`) VALUES
-(1, 'Kalleby', 'kalleby@teste.com', '123456', '88999999999', '2026-05-10 22:38:51');
+(1, 'Kalleby', 'kalleby@teste.com', '123456', '88999999999', '2026-05-10 22:38:51'),
+(2, 'clara', 'clara@gmail.com', '$2y$10$0OHVWtwaQfkhchfnmB8p5.48lT/LY5KPWrKSG1uW5POLJAIZ.VSGK', '(29) 30192-3102', '2026-05-13 03:50:22');
 
 --
 -- Índices para tabelas despejadas
@@ -131,13 +136,13 @@ ALTER TABLE `favoritos`
 -- AUTO_INCREMENT de tabela `imoveis`
 --
 ALTER TABLE `imoveis`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restrições para tabelas despejadas
