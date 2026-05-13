@@ -100,7 +100,7 @@ $base = '/tde-backend/crud-imobiliaria/public';
         <h2 id="modal-form-title">Novo Imóvel</h2>
         <button class="modal-close" id="modal-form-close">&times;</button>
       </div>
-      <form method="POST" action="<?= $base ?>/imovel/cadastrar">
+      <form method="POST" action="<?= $base ?>/imovel/cadastrar" enctype="multipart/form-data">
         <div class="form-grid">
           <div class="form-group full-width"><label>Título *</label><input type="text" name="titulo" required></div>
           <div class="form-group"><label>Tipo *</label><select name="tipo" required><option value="">Selecione</option><option>Casa</option><option>Apartamento</option><option>Comercial</option><option>Terreno</option></select></div>
@@ -117,7 +117,7 @@ $base = '/tde-backend/crud-imobiliaria/public';
           <div class="form-group"><label>Contato</label><input type="text" name="contato" placeholder="(00) 00000-0000"></div>
           <div class="form-group"><label>Código</label><input type="text" name="codigo"></div>
           <div class="form-group full-width"><label>Descrição</label><textarea name="descricao" rows="3"></textarea></div>
-          <div class="form-group full-width"><label>URL da Imagem</label><input type="text" name="imagem"></div>
+          <div class="form-group full-width"><label>Imagem do Imóvel</label><input type="file" name="imagem" accept="image/*"></div>
         </div>
         <div class="form-actions">
           <button type="button" class="btn-cancel" id="btn-cancel-form">Cancelar</button>
