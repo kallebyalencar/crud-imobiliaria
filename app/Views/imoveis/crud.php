@@ -259,6 +259,46 @@ $base = '/tde-backend/crud-imobiliaria/public';
     document.getElementById('btn-cancel-editar').addEventListener('click', () => {
       document.getElementById('modal-editar').hidden = true;
     });
+
+    document.querySelectorAll('input[name="finalidade"]').forEach(r => {
+      r.addEventListener('change', filtrar);
+    });
+    document.querySelectorAll('input[name="tipo"]').forEach(c => {
+      c.addEventListener('change', filtrar);
+    });
+    document.querySelectorAll('input[name="status"]').forEach(c => {
+      c.addEventListener('change', filtrar);
+    });
+    document.getElementById('sort-select').addEventListener('change', filtrar);
+    document.getElementById('btn-clear-filters').addEventListener('click', () => {
+      document.querySelectorAll('input[name="finalidade"]')[0].checked = true;
+      document.querySelectorAll('input[name="tipo"]').forEach(c => c.checked = false);
+      document.querySelectorAll('input[name="status"]').forEach(c => c.checked = false);
+      document.getElementById('sort-select').value = 'data-desc';
+      filtrar();
+    });
+
+    function filtrar() {
+      const finalidade = document.querySelector('input[name="finalidade"]:checked').value;
+      const tipos = [...document.querySelectorAll('input[name="tipo"]:checked')].map(c => c.value);
+      const status = [...document.querySelectorAll('input[name="status"]:checked')].map(c => c.value);
+      const ordem = document.getElementById('sort-select').value;
+      const cards = document.querySelectorAll('.prop-card');
+      let visiveis = 0;
+      cards.forEach(card => {
+        const id = card.querySelector('[onclick]')?.getAttribute('onclick')?.match(/\d+/)?.[0];
+        if (!id) return;
+        const imovel = imoveisData.find(i => i.id == id);
+        if (!imovel) return;
+        let show = true;
+        if (finalidade && imovel.finalidade !== finalidade) show = false;
+        if (tipos.length && !tipos.includes(imovel.tipo)) show = false;
+        if (status.length && !status.includes(imovel.status)) show = false;
+        card.style.display = show ? '' : 'none';
+        if (show) visiveis++;
+      });
+      document.querySelector('.results-count').textContent = visiveis + ' imóvel(is) encontrado(s)';
+    }
   </script>
 </body>
 
