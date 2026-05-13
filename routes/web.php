@@ -63,12 +63,6 @@ switch ($route) {
         $controller->cadastrar();
         break;
 
-    case '/cadastro':
-        require_once '../app/Controllers/AuthController.php';
-        $controller = new AuthController();
-        $controller->cadastrar();
-        break;
-
     case '/perfil':
         require_once '../app/Controllers/HomeController.php';
         $controller = new HomeController();
