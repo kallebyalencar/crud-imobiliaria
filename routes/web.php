@@ -31,6 +31,16 @@ switch ($route) {
         $controller->cadastrar();
         break;
 
+    case '/imovel/editar':
+        if (!isset($_SESSION['usuario_id'])) {
+            header('Location: /tde-backend/crud-imobiliaria/public/login');
+            exit;
+        }
+        require_once '../app/Controllers/ImovelController.php';
+        $controller = new ImovelController();
+        $controller->editar();
+        break;
+
     case '/imovel/deletar':
         if (!isset($_SESSION['usuario_id'])) {
             header('Location: /tde-backend/crud-imobiliaria/public/login');
