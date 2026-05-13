@@ -19,6 +19,10 @@ class AuthController {
 
             $usuario = $this->dao->buscarPorEmail($email);
 
+            // var_dump($usuario);
+            // var_dump(password_verify($senha, $usuario->senha ?? ''));
+            // die();
+
             if (!$usuario || !password_verify($senha, $usuario->senha)) {
                 $_SESSION['erro_login'] = 'E-mail ou senha incorretos.';
                 header('Location: /tde-backend/crud-imobiliaria/public/login');
